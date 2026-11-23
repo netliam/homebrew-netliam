@@ -1,8 +1,8 @@
 cask "scrobbleup" do
-  version "1.2.6"
-  sha256 "sha256:d7127e22696135f693f9d7ef54d14b7fd9fba4d7edd923a56a7447b43061ec3b"
+  version "1.2.8"
+  sha256 "dcf3373035ee1779be05ca033ff0b9cb8f06db78c359ee81ef95aed96d84ec3e"
 
-  url "https://github.com/netliam/scrobble.up/releases/download/v1.2.6/scrobble.up.dmg"
+  url "https://github.com/netliam/scrobble.up/releases/download/v#{version}/scrobble.up.dmg"
   name "scrobble.up"
   desc "Lightweight ListenBrainz & last.fm music tracker"
   homepage "https://github.com/netliam/scrobble.up"
@@ -14,7 +14,7 @@ cask "scrobbleup" do
 
   depends_on :macos
 
-  app "ScrobbleUp.app"
+  app "scrobble.up.app"
 
   zap trash: [
     "~/Library/Containers/com.netliam.ScrobbleUp/",
