@@ -12,7 +12,7 @@ cask "scrobbleup" do
     strategy :github_latest
   end
 
-  depends_on :macos
+  depends_on macos: ">= :sequoia"
 
   app "scrobble.up.app"
 
